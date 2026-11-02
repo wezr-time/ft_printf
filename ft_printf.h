@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ymoubtas <ymoubtas@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/30 06:12:41 by ymoubtas          #+#    #+#             */
-/*   Updated: 2026/10/30 06:56:54 by ymoubtas         ###   ########.fr       */
+/*   Created: 2026/11/02 14:10:56 by ymoubtas          #+#    #+#             */
+/*   Updated: 2026/11/02 14:10:57 by ymoubtas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+# include <stdint.h>
 
-int	ft_printf(const char *format, ...);
-int	ft_putchar(int c);
-int	ft_putnbr_base(long nbr, const char *src_base, const int base);
-int	ft_putstr(const char *s);
-int	ft_print_address(unsigned long nbr);
-int	ft_print_hex(long nbr, char data_type);
+int	ft_printf(const char *f, ...);
+int	ft_printchar(int c);
+int	ft_printnbr_base(long n, char *srcbase);
+int	ft_printstr(char *s);
+int	ft_printaddress(uintptr_t p);
 
 #endif

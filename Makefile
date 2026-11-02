@@ -1,6 +1,7 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC = ft_printf.c ft_putchar.c ft_putnbr_base.c ft_putstr.c ft_print_address.c ft_print_hex.c
+SRC = ft_printf.c ft_printchar.c ft_printnbr_base.c ft_printstr.c ft_printaddress.c
+
 OBJ = $(SRC:.c=.o)
 HEADER = ft_printf.h
 NAME = libftprintf.a
