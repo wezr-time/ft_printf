@@ -6,7 +6,7 @@
 /*   By: ymoubtas <ymoubtas@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 14:10:56 by ymoubtas          #+#    #+#             */
-/*   Updated: 2026/11/02 14:10:57 by ymoubtas         ###   ########.fr       */
+/*   Updated: 2026/11/03 09:03:50 by ymoubtas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int	ft_printf(const char *f, ...);
 int	ft_printchar(int c);
 int	ft_printnbr_base(long n, char *srcbase);
 int	ft_printstr(char *s);
-int	ft_printaddress(uintptr_t p);
+int	ft_printaddress(void *p);
 
 #endif

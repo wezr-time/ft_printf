@@ -6,7 +6,7 @@
 /*   By: ymoubtas <ymoubtas@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 14:10:23 by ymoubtas          #+#    #+#             */
-/*   Updated: 2026/11/02 14:10:27 by ymoubtas         ###   ########.fr       */
+/*   Updated: 2026/11/03 09:03:37 by ymoubtas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static int	ft_print(uintptr_t nbr, const char *src_base)
 	return (count);
 }
 
-int	ft_printaddress(uintptr_t p)
+int	ft_printaddress(void *p)
 {
 	int	count;
 	int	written;
@@ -43,7 +43,7 @@ int	ft_printaddress(uintptr_t p)
 	if (ft_printstr("0x") < 0)
 		return (-1);
 	count = 2;
-	written = ft_print(p, "0123456789abcdef");
+	written = ft_print((uintptr_t)p, "0123456789abcdef");
 	if (written < 0)
 		return (-1);
 	count += written;

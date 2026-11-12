@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by `ymoubtas`.*
+*This project has been created as part of the 42 curriculum by ymoubtas.*
 
 # ft_printf
 
@@ -22,6 +22,11 @@ The mandatory conversions are:
 | `%%` | Prints a percent sign. |
 
 ## Instructions
+
+### Requirements
+
+- A C compiler.
+- make.
 
 ### Compilation
 
